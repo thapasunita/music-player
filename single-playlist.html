@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single-playlist</title>
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/singlePlaylist.css">
+
+</head>
+<body>
+
+<nav><!--navigation bar start-->
+    <!--This div contains the logo and title of the page-->
+    <div class="logo-box">
+        <div class="music-player-tag">
+            <div class="music-studio-logo">
+                <img src="image/logo.png" alt="logo">
+            </div>
+            <div class="music-player-name">Ninja<br/><b>Studio</b></div>
+        </div>
+
+        <div class="favourites">
+            <h4>
+                <a href="#"> Favourites </a>
+            </h4>
+        </div>
+
+    </div>
+
+    <!--This div contains the search bar and user profile-->
+    <div class="search-box">
+        <div class="search-bar">
+            <form id="form" autocomplete="off">
+                <a href="#"> <span class="fa fa-search search-icon" style="color: white"></span></a>
+                <input type="text" name="search" id="search" placeholder="Search..."/>
+                <a href="#"><span class="fa fa-microphone mic-icon" style="color: white"></span></a>
+            </form>
+        </div>
+
+        <a href="#" class="notifications"><span class="fa fa-bell"></span><span class="badge"></span></a>
+        <div id="user">
+            <a href="#"><img src="image/profile-img.jpg" alt="profileImage"/></a>
+        </div>
+    </div>
+</nav><!--navigation bar end-->
+
+
+<main>
+    <div class="aside-section1">
+        <div class="header-section">
+            <div class="image-section">
+                <!-- there is nothing in this div because all the images and all are added by css -->
+            </div>
+            <div class="about">
+                <div class="header">
+                    <h1>ColdPlay</h1>
+                    <p id="follower">851 Followers</p>
+
+                </div>
+                <div class="description">
+                    <p id="band">British Band</p>
+
+                    <p>Coldplay are a British rock band formed in London in 1996. The band members are Chris
+                        Martin(lead vocals), Jonny Buckland(lead guitar), Guy Berryman(bass guitar) and Will
+                        Champion(drums). They met at University College London and began playing music together from
+                        1996 to 1998.</p>
+                </div>
+
+                <div>
+                    <button>Play All</button>
+                    <a href="#">Follow</a>
+                </div>
+                <p id="track-album">247 Tracks | 128 Albums</p>
+            </div>
+        </div>
+
+        <!-- playlist part begins -->
+        <div class="playlist-items">
+            <!-- playlist item -->
+            <div class="playlist-item">
+                <div class="left">
+                    <div>
+                        01
+                    </div>
+                    <div>
+                        <img src="image/single-playlist-image/Alan_Walker_Alone_Music_Video-526348171-large.jpg">
+                        <div class="play-btn">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>
+                            Alone
+                        </h4>
+                        <p>
+                            Alan Walker
+                        </p>
+                    </div>
+                </div>
+                <div class="center">
+                    3:14
+                </div>
+                <div class="right">
+                    <div class="heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="plus">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            02
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/mirage.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Mirage
+                            </h4>
+                            <p>
+                                Else
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            03
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/worry-bout-us.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Worry Bout Us
+                            </h4>
+                            <p>
+                                Rosie Lowe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            04
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/new-skin.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                New Skin
+                            </h4>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            05
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/sorry.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Sorry
+                            </h4>
+                            <p>
+                                Justin Bieber
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            06
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/hello.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Hello
+                            </h4>
+                            <p>
+                                Adele
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            07
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/sugar.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Sugar
+                            </h4>
+                            <p>
+                                Maroon 5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            08
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/Ed_Sheeran_Perfect_Single_cover.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Perfect
+                            </h4>
+                            <p>
+                                Ed Sheeran
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            09
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/burn.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Burn
+                            </h4>
+                            <p>
+                                Ellie Goulding
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items">
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="left">
+                        <div>
+                            10
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/diamonds.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Diamonds
+                            </h4>
+                            <p>
+                                Rihanna
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  <!-- section 1 finish here -->
+
+
+    <div class="aside-section2">
+        <div class="similar">
+            <div class="header similar-header">
+                <h2>Similar Artists</h2>
+                <p><a href="#">View All</a></p>
+
+            </div>
+
+            <div class="list">
+                <!-- item -->
+                <div class="list-item">
+                    <div class="image">
+                        <img src="image/single-playlist-image/mirage.jpg">
+                        <div class="play-btn">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div style="position: absolute; left:120px;">
+                        <h4>
+                            Imagine Dragons
+                        </h4>
+                        <p class="author-name">
+                            Pop Band
+                        </p>
+                    </div>
+                    <div class="extra">
+                        <div>
+                            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                        <p class="time">
+                            4:44
+                        </p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="list-item">
+                    <div>
+                        <img src="image/single-playlist-image/mirage.jpg">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div style="position: absolute; left:120px;">
+                        <h4>
+                            Imagine Dragons
+                        </h4>
+                        <p class="author-name">
+                            Pop Band
+                        </p>
+                    </div>
+                    <div class="extra">
+                        <div>
+                            <a href="#"> <i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                        <p class="time">
+                            4:44
+                        </p>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="list-item">
+                    <div>
+                        <img src="image/single-playlist-image/mirage.jpg">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div style="position: absolute; left:120px;">
+                        <h4>
+                            Imagine Dragons
+                        </h4>
+                        <p class="author-name">
+                            Pop Band
+                        </p>
+                    </div>
+                    <div class="extra">
+                        <div>
+                            <a href="#"> <i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                        <p class="time">
+                            4:44
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar">
+            <div class="header similar-header">
+                <h2>Recently Played</h2>
+                <p><a href="#">View All</a></p>
+            </div>
+
+            <div class="playlist-items recentlyplayed">
+                <!-- playlist item -->
+                <div class="playlist-item recentPlay">
+                    <div class="left recentlyplaysong-image">
+                        <div>
+                            01
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/Alan_Walker_Alone_Music_Video-526348171-large.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Alone
+                            </h4>
+                            <p>
+                                Alan Walker
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-items recentlyplayed">
+                <!-- playlist item -->
+                <div class="playlist-item recentPlay">
+                    <div class="left recentlyplaysong-image">
+                        <div>
+                            02
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/Alan_Walker_Alone_Music_Video-526348171-large.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Alone
+                            </h4>
+                            <p>
+                                Alan Walker
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-items recentlyplayed">
+                <!-- playlist item -->
+                <div class="playlist-item recentPlay">
+                    <div class="left recentlyplaysong-image">
+                        <div>
+                            03
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/Alan_Walker_Alone_Music_Video-526348171-large.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Alone
+                            </h4>
+                            <p>
+                                Alan Walker
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-items recentlyplayed">
+                <!-- playlist item -->
+                <div class="playlist-item recentPlay">
+                    <div class="left recentlyplaysong-image">
+                        <div>
+                            04
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/Alan_Walker_Alone_Music_Video-526348171-large.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Alone
+                            </h4>
+                            <p>
+                                Alan Walker
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="playlist-items recentlyplayed">
+                <!-- playlist item -->
+                <div class="playlist-item recentPlay">
+                    <div class="left recentlyplaysong-image">
+                        <div>
+                            05
+                        </div>
+                        <div>
+                            <img src="image/single-playlist-image/Alan_Walker_Alone_Music_Video-526348171-large.jpg">
+                            <div class="play-btn">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>
+                                Alone
+                            </h4>
+                            <p>
+                                Alan Walker
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main> <!--end main section-->
+
+<footer id="footer-section">
+
+    <div class="footer-box">
+        <img src="image/just-the-way.jpg">
+        <h4>Just the Way You Are</h4>
+        <p>Bruno Mars</p>
+        <div class="heart-ban-icon">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-ban"></i>
+        </div>
+    </div>
+
+    <div class="footer-box">
+        <div id="buttons">
+            <button><i class="fa fa-random"></i></button>
+            <button><i class="fas fa-step-backward"></i></button>
+            <button onclick="playPause()" id="play-pause">
+                <i class="fas fa-play"></i>
+            </button>
+            <button><i class="fas fa-step-forward"></i></button>
+            <button><i class="fas fa-redo-alt"></i></button>
+
+            <div class="timebox">
+                <span id="current-duration">00:00</span>
+                <input id="audio-progress" type="range" min="0"  max="0" value="0" onchange="changeAudioTime()">
+                <span id="total-duration"></span>
+            </div>
+        </div>
+
+        <audio id="player">
+            <source src="audio/Just%20The%20Way%20You%20Are%20-%20Bruno%20Mars.mp3" type="audio/ogg">
+        </audio>
+
+
+    </div>
+
+    <div class="footer-box">
+        <div id="volumn-up-down-box">
+            <i class="fas fa-list-ul icons"></i>
+            <i class="fas fa-laptop icons"></i>
+            <i onclick="volumeUp()" class="fas fa-volume-up icons"></i>
+            <i onclick="volumeDown()" class="fas fa-volume-down icons"></i>
+            <i class="fas fa-expand-alt icons"></i>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/script.js" ></script>
+
+</body>
+</html>

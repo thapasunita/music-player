@@ -1,0 +1,282 @@
+:root{
+    --playlist-items-background-color         : #1a1e33;
+    --playlist-items-background-color-on-hover: #2e3249;
+}
+.header-section {
+    width           : 92%;
+    margin: 30px 0px 0px 7%;
+    height: auto;
+    padding-bottom  : 50px;
+    background-color: #141b41;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+}
+
+.image-section {
+    height: 25vw;
+    width : 40%;
+    background-image: linear-gradient(to bottom, transparent, rgba(20, 27, 65, 1)),
+   url("../image/single-playlist-image/coldplay-header.jpg");
+    background-size    : cover;
+    background-position: center;
+}
+
+.about {
+    height: auto;
+    width : 60%;
+}
+
+.header {
+    color          : var(--font-white);
+    height         : auto;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size  : 38px;
+    font-weight: 700;
+    padding    : 20px 0px 0px 20px;
+}
+
+#follower {
+    font-size: 17px;
+    color    : var(--font-lightgrey);
+    padding  : 40px 30px 0px 0px;
+}
+#band {
+    color: var(--font-lightgrey);
+    margin: -25px 0px 25px 0px;
+}
+.description p {
+    font-size   : 20px;
+    line-height : 30px;
+    padding-left: 20px;
+    color       : var(--font-lightgrey);
+}
+.header-section button {
+    border          : 0px;
+    padding         : 15px 60px 15px 60px;
+    color           : white;
+    font-size       : 1.6rem;
+    margin          : 50px 0px 0px 25px;
+    letter-spacing  : 2px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #4127b4, #a641d6);
+}
+.header-section div a {
+    text-decoration: none;
+    color          : var(--font-white);
+    font-size      : 1.5rem;
+    margin-left    : 80px;
+}
+#track-album {
+     color       : var(--font-white);
+     padding-left: 25px;
+     font-size   : 20px;
+ }
+
+/*playlist*/
+.playlist-item {
+    height          : 8vh;
+    width           : 92%;
+    margin-left     : 7%;
+    box-sizing      : border-box;
+    background-color: var(--playlist-items-background-color);
+    color           : var(--font-white);
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : center;
+    margin-top      : 12px;
+}
+
+/* playlist item hovering effects */
+.playlist-item:hover {
+    background-color: var(--playlist-items-background-color-on-hover);
+}
+/* left part if the playlist item */
+.left {
+    display        : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+    align-items    : center;
+    width          : 30%;
+    height         : 100%;
+    padding        : 0% 1%;
+}
+
+/* center part of the playlist item which contains the duration length of the song */
+.center {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    height         : 100%;
+    font-size      : 12px;
+    color          : rgb(185, 185, 185);
+}
+
+/* right part of the playlist item, which contains icons */
+.right {
+    color         : rgb(185, 185, 185);
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding-right : 2%;
+}
+
+.right i {
+    padding-right: 30px;
+}
+.left>div:nth-child(2) {
+    height   : 80%;
+    width:  30%;
+    margin   : 0px 12% 0px 12%;
+    position : relative;
+}
+
+.left>div:nth-child(2) img {
+    width : 100%;
+    height: 100%;
+
+}
+
+.left>div:nth-child(3) p {
+    color     : rgb(185, 185, 185);
+    margin-top: -14px;
+    font-size : 15px;
+}
+
+/* customizing the play button */
+.play-btn {
+    background-color: black;
+    width           : 100%;
+    height          : 100%;
+    position        : absolute;
+    top             : 0%;
+    left            : 0%;
+    opacity         : 0;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+    align-items     : center;
+    transition      : all ease-in-out 0.1s;
+}
+
+/* on hover effects */
+.play-btn:hover {
+    opacity: 0.7;
+}
+.heart, .plus{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*aside-section2 start here*/
+.similar {
+height: auto;
+margin-top: 40px;
+}
+
+.similar-header h2 {
+    margin-left:10px;
+}
+
+.similar-header p a {
+    text-decoration: none;
+    color          : var(--font-lightgrey);
+    margin-right   : 20px;
+}
+
+.list-item {
+    width          : 95%;
+    height         : 100px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    position       : relative;
+    margin-bottom  : 15px;
+}
+/* adjusting the name and image of the songs relative to their original position */
+.list-item>div:nth-child(1) {
+
+    height  : 100%;
+    position: relative;
+}
+.list-item>div:nth-child(1)>img {
+
+    height: 100%;
+    margin-left: 10px;
+}
+.author-name {
+    font-size : 15px;
+    margin-top: -15px;
+    color     : var(--font-lightgrey);
+}
+.time {
+    color: var(--font-lightgrey);
+}
+.extra {
+    text-align: right;
+    margin-top: 20px;
+}
+.extra a {
+    color: var(--font-lightgrey);
+}
+
+.recentlyplayed {
+    margin-left     : -20px;
+    margin-top: 20px;
+}
+.recentPlay {
+    background-color: transparent;
+}
+.recentPlay:hover {
+    background-color: transparent;
+}
+.recentlyplaysong-image {
+    height: 100px;
+    width : 250px;
+}
+.recentlyplaysong-image img {
+    height: 50px;
+    width : 100%;
+}
+footer{
+    opacity: 1;
+}
+
+@media(max-width: 1250px){
+    .similar {
+        padding-left: 90px;
+    }
+    .recentlyplaysong-image {
+        margin-left: -20px;
+    }
+}
+@media(max-width: 767.98px) {
+    .header-section {
+        width: 100%;
+        margin: 30px 0px 0px 0%;
+        flex-direction: column;
+    }
+
+    .image-section {
+        height: 50vw;
+        width: 98%;
+
+    }
+
+    .about {
+        height: auto;
+        width: 98%;
+    }
+
+    .playlist-item {
+        width: 99%;
+        margin-left: 0px;
+    }
+
+}

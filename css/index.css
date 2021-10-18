@@ -1,0 +1,788 @@
+/*  Home Screen Carousel*/
+#overflow {
+    overflow: hidden;
+}
+#carousel input{
+    display: none;
+}
+#carousel img {
+    width: 90%;
+    height: 600px;
+    margin: 20px 0px 0px 5%;
+}
+
+#slides .inner {
+    width: 500%;
+}
+
+#slides article {
+    width: 20%;
+    float: left;
+}
+
+#active {
+    display: flex;
+}
+
+#active label {
+    position: relative;
+    top: -50px;
+    left: 45%;
+    border-radius: 50%;
+    margin: 0px 10px 0px 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background-color: var(--font-white);
+}
+
+#active label:hover {
+    background: var(--font-lightgrey);
+}
+
+/* Animation */
+#slides .inner {
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
+
+/*Beginning of latest release section*/
+.latest-release {
+    position: relative;
+    height: auto;
+    width: 90%;
+    color: var(--font-white);
+    margin: 0px 0px 0px 5%;
+}
+
+.latest-release-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* all the components of the latest release part */
+.latest-release-container > div {
+    height: 100px;
+    width: 47%;
+    margin: 10px 0px;
+}
+
+.card {
+    display: flex;
+}
+
+.card:hover { /* hovering effects for the latest release part components */
+    box-shadow: 0px 0px 2px 1px white;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+.card .abc{
+    position: relative;
+    left: -60px;
+    top: -35px;
+    font-size: 20px;
+   visibility: hidden;
+}
+.card:hover .abc{
+
+   visibility: visible;
+}
+#footer-section:target {
+    opacity: 1;
+    display: block;
+    transform: scale(1);
+}
+.play-button{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -100%;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
+/* hovering effect for the play button */
+.play-button:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* description of the song in the card, which will contain the song nae and author */
+.song-description {
+    margin: auto 5%;
+}
+
+/* options is the class for the 3 dots which needs to be clicked to trigger the latest release drop down menu */
+.options {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 2%;
+}
+
+/* this is for the latest release drop down menu */
+.latest-release-dropdown {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    top: 15px;
+    right: 0px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s;
+}
+
+.latest-release-dropdown hr {
+    width: 95%;
+    margin-left: 0px;
+}
+
+/* icon in the latest release drop down */
+.fa-ellipsis-h {
+    cursor: pointer;
+}
+
+/* this input is for the latest release drop down */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* checking it, will trigger the latest release dropdown */
+input[type="checkbox"]:checked ~ .latest-release-dropdown {
+    width: max-content;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+}
+
+/* options in the latest release drop down */
+.drop-item a {
+    text-decoration: none;
+    text-align: left;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+}
+
+.drop-item a i {
+    margin: 0px 15px 0px 10px;
+}
+
+/*End of latest release section*/
+
+.popular-artists { /*popular artists section*/
+    position: relative;
+    height: auto;
+    width: 90%;
+    color: var(--font-white);
+    margin: 0px 0px 0px 5%;
+}
+
+.popular-artists-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artists {
+    text-decoration: none;
+    color: var(--font-white);
+}
+
+.popular-artists div a img {
+    width: 130px;
+    min-width: 60px;
+    min-height: 60px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.play {
+    display: none;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.popular-artists div a img:hover ~ .play {
+    display: block;
+    margin-top: -90px;
+}
+
+.popular-artists div a img:hover ~ .singer-name {
+    margin-top: 66px;
+}
+
+.popular-artists-content > a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popular-artists div a img:hover {
+    opacity: 0.8;
+}
+
+/*popular artists section end*/
+
+.music-genre {
+    background-color: #101642;
+    height: auto;
+    width: 90%;
+    color: var(--font-white);
+    margin: 0px 0px 70px 5%;
+    display: flex;
+    padding: 20px 0px 20px 0px;
+}
+
+.station {
+    height: auto;
+    width: 25%;
+    text-align: center;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.first-layer {
+    width: 11vw;
+    height: 4vw;
+    background-color: #f9d64c;
+
+}
+
+.second-layer {
+    position: relative;
+    top: -1vw;
+    left: 1vw;
+    width: 9vw;
+    height: 6vw;
+    background-color: #f0bc10;
+}
+
+.third-layer {
+    position: relative;
+    top: -1vw;
+    width: 7vw;
+    height: 8vw;
+    background-color: #ff4f0a;
+    margin: auto;
+
+}
+
+.third-layer img {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.third-layer p {
+    font-family: Corbel;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: -1px;
+}
+
+.music-theme {
+    height: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.music-theme a {
+    text-decoration: none;
+}
+
+.theme-content img {
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+
+.theme-content p {
+    position: relative;
+    color: var(--font-white);
+    font-weight: 600;
+    font-size: 20px;
+    top: -105px;
+    left: 50px;
+    z-index: 2;
+}
+#workout p {
+    left: 35px;
+}
+/*music genre 2 start*/
+.music-genre-2{
+    height: auto;
+    width: 90%;
+    margin: 0px 0px 70px 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.outer-div {
+    width: 33%;
+    height: 12vw;
+    overflow: hidden;
+    cursor: pointer;
+}
+.inner-div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* party */
+.music-genre-2 .outer-div:nth-child(1) .inner-div {
+    background-image: url("../image/party.jpg");
+}
+
+/* electronic */
+.music-genre-2 .outer-div:nth-child(2) .inner-div {
+    background-image: url("../image/electronic.jpg");
+}
+/* road */
+.music-genre-2 .outer-div:nth-child(3) .inner-div {
+    background-image: url("../image/trip.jpg");
+}
+.outer-div:hover .inner-div {
+    transform: scale(1.2);
+}
+
+.outer-div .inner-div span {
+    color: var(--font-white);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px rgb(172, 171, 171);
+}
+
+/*latest songs*/
+.latest-songs{
+    height: auto;
+    width: 90%;
+    color: var(--font-white);
+    margin: 0px 0px 70px 5%;
+}
+.latest-songs-list {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.latest-songs-item {
+    height: 150px;
+    width: auto;
+    margin: 35px 0px 35px 0px;
+}
+.song-album {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    color: var(--font-white);
+    font-size: 1.5rem;
+    background-position: center;
+    background-size: cover;
+}
+.song-album:hover {
+    opacity: 0.8;
+}
+.song-album:hover > .hide {
+    display: block;
+    /*Play button displayed on hover*/
+}
+.hide {
+    color: var(--font-white);
+    position: relative;
+    top: 45%;
+    display: none;
+}
+#latest-songs-item-img-2:hover > .hide {
+    display: block;
+}
+.latest-songs-item-title {
+    padding-top: 15px;
+}
+.latest-songs-list .latest-songs-item:nth-child(1) .song-album {
+    background-image: url("../image/Ed_Sheeran_-_Shape_of_You.png");
+}
+
+.latest-songs-list .latest-songs-item:nth-child(2) .song-album {
+    background-image: url("../image/viva.jpg");
+}
+
+.latest-songs-list .latest-songs-item:nth-child(3) .song-album {
+    background-image: url("../image/pillowtalk.png");
+}
+
+.latest-songs-list .latest-songs-item:nth-child(4) .song-album {
+    background-image: url("../image/see- you.jpg");
+}
+
+.latest-songs-list .latest-songs-item:nth-child(5) .song-album {
+    background-image: url("../image/imagine.png");
+}
+
+.latest-songs-list .latest-songs-item:nth-child(6) .song-album {
+    background-image: url("../image/just-the-way.jpg");
+}  /*End of latest english songs section*/
+
+
+/*Latest hindi Songs section*/
+.latest-Hindi-songs {
+    width: 90%;
+    color: var(--font-white);
+    margin: 0px 0px 190px 5%;
+}
+.latest-Hindi-songs
+.latest-songs-list
+.latest-songs-item:nth-child(1)
+.song-album {
+    background-image: url("../image/Param-Sundari-Post.jpg");
+}
+
+.latest-Hindi-songs
+.latest-songs-list
+.latest-songs-item:nth-child(2)
+.song-album {
+    background-image: url("../image/Raataan-Lambiyan.jpg");
+}
+
+.latest-Hindi-songs
+.latest-songs-list
+.latest-songs-item:nth-child(3)
+.song-album {
+    background-image: url("../image/qaafirana.jpg");
+}
+
+.latest-Hindi-songs
+.latest-songs-list
+.latest-songs-item:nth-child(4)
+.song-album {
+    background-image: url("../image/Kaun-Tujhe.jpg");
+}
+
+.latest-Hindi-songs
+.latest-songs-list
+.latest-songs-item:nth-child(5)
+.song-album {
+    background-image: url("../image/kaise-hua.jpg");
+}
+
+.latest-Hindi-songs
+.latest-songs-list
+.latest-songs-item:nth-child(6)
+.song-album {
+    background-image: url("../image/tere-sang.jpg");
+}
+
+/*aside-section2*/
+#heading {
+    color: var(--font-white);
+    margin:0px 30px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#heading h4 a {
+    text-decoration: none;
+    color: #4cd7b9;
+}
+.queue-options {
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    background-color: white;
+    width: 13%;
+    height: auto;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0);
+    transition: all ease-in-out 0.3s;
+}
+.queue-options p a {
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.latest-release-dropdown {
+    margin-right: 70%;
+    margin-top: 5%;
+}
+
+.latest-release-dropdown a {
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.queue-options hr {
+    width: 90%;
+    color: black;
+}
+
+#queue-option-box:target {
+    opacity: 1;
+    display: block;
+    transform: scale(1);
+}
+/* playlist content */
+.playlist-content {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    cursor: pointer;
+    margin-bottom: 10vh;
+}
+
+/* playlist content container scroll bar */
+.playlist-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* left content contains the image, index and name of the song */
+.left-content {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font-white);
+}
+
+.left-content > div:nth-child(3) {
+    margin-left: 12px;
+    width: 50%;
+}
+
+.song-name {
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.singer-name,
+.number {
+    color: rgb(223, 223, 223);
+}
+
+/* right content contains the heart icon */
+.right-content {
+    position: relative;
+    bottom: 62%;
+    left: 99%;
+    height: 20px;
+    color: var(--font-white);
+    font-size: 20px;
+}
+.playlist-item {
+    width: 90%;
+    height: auto;
+    padding: 0px 1%;
+    box-sizing: border-box;
+    margin: 1%;
+}
+
+/* animation for glowing heart in each of the playlist items */
+@keyframes glowing-heart {
+    0% {
+        color: yellow;
+    }
+
+    50% {
+        color: orangered;
+    }
+
+    100% {
+        color: red;
+    }
+}
+/* hover effect on heart */
+.right-content:hover {
+    animation-name: glowing-heart;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+.playlist-item img {
+    width: 100px;
+    height: 100px;
+}
+.playlist-image {
+    width: 100px;
+    height: 100px;
+}
+/*End of aside section*/
+
+@media (max-width: 1191.98px) {
+    #carousel img {
+        width: 99%;
+        margin: 20px 0px 0px 1%;
+    }
+
+    .latest-release {
+        width: 98%;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .popular-artists {
+        width: 99%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .music-genre {
+        width: 98%;
+        margin: 0px 0px 70px 1%;
+        flex-direction: column;
+    }
+
+    .station {
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+    }
+    .first-layer {
+        width: 15vw;
+        height: 7vw;
+        margin-top: 50px;
+    }
+    .second-layer {
+         width: 13vw;
+        height: 9vw;
+     }
+    .third-layer {
+       width: 11vw;
+        height: 11vw;
+    }
+    .third-layer p {
+        font-size: 18px;
+    }
+    .music-theme {
+      width: 100%;
+    }
+    .music-genre-2{
+        width: 99%;
+        margin: 0px 0px 70px 2px;
+    }
+    .outer-div {
+        width: 48%;
+        height: 20vw;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .latest-release-container {
+        flex-direction: column;
+    }
+
+    .latest-release-container > div {
+        width: 97%;
+
+    }
+    .popular-artists-content {
+        justify-content: left;
+    }
+
+    .artists {
+        margin: 0px 10px 0px 10px;
+    }
+
+    .music-genre {
+        width: 99%;
+        margin: 0px 0px 70px 1%;
+
+    }
+    .first-layer {
+        width: 17vw;
+        height: 9vw;
+        margin-top: 50px;
+    }
+
+    .second-layer {
+
+        width: 15vw;
+        height: 11vw;
+
+    }
+
+    .third-layer {
+
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .third-layer p {
+        font-size: 20px;
+    }
+    .music-genre-2{
+        flex-direction: column;
+    }
+    .outer-div {
+        width: 99%;
+        height: 26vw;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 700.98px){
+    .first-layer {
+        width: 22vw;
+        height: 13vw;
+        margin-top: 50px;
+    }
+    .second-layer {
+        width: 20vw;
+        height: 15vw;
+    }
+    .third-layer {
+      width: 18vw;
+        height: 17vw;
+    }
+    .third-layer p {
+        font-size: 19px;
+    }
+
+}
